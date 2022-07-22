@@ -1,0 +1,51 @@
+[
+    {
+        "name": "Vehicle"
+    },
+    {
+        "name": "Game"
+    },
+    {
+        "name": "Food"
+    },
+    {
+        "name": "Travel"
+    },
+    {
+        "name": "relaxed"
+    },
+    {
+        "name": "Sport"
+    },
+    {
+        "name": "Music"
+    },
+    {
+        "name": "Education"
+    },
+    {
+        "name": "Business"
+    },
+    {
+        "name": "Other"
+    },
+    {
+        "name": "Movie"
+    },
+    {
+        "name":"Martial Arts"
+    },
+    {
+        "name":"Religion"
+    },
+    {
+        "name":"Competition"
+    },
+    {
+        "name":"Beauty"
+    },
+    {
+        "name":"Art"
+    }
+    
+]

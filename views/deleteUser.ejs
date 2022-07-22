@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Delete User</title>
+    <style>
+      table {
+        font-family: arial, sans-serif;
+        border-collapse: collapse;
+        width: 100%;
+      }
+      
+      td, th {
+        border: 1px solid #dddddd;
+        text-align: left;
+        padding: 8px;
+      }
+      
+      tr:nth-child(even) {
+        background-color: #dddddd;
+      }
+      </style>
+  </head>
+  <body>
+    <table>
+      <tr>
+        <th>UserName</th>
+        <th>Full Name</th>
+        <th>Created At</th>
+        <th>Delete User</th>
+      </tr>
+      <% user.forEach(el => { %> <% if (el.role === false) { %>
+      <tr>
+        <td><%= el.userName %></td>
+        <td><%= el.Profile.fullName %></td>
+        <td><%= el.createdAt %></td>
+        <td>
+          <a href="/user/<%= el.id %>/delete">
+            <button>DELETE</button>
+          </a>
+        </td>
+      </tr>
+      <% } %> <% }) %>
+    </table>
+
+    <a href="/logout">
+      <button>Log Out</button>
+    </a>
+    
+  </body>
+</html>
